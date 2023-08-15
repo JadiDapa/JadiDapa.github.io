@@ -32,7 +32,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 90%;
+  width: 80%;
   padding: 2rem 9%;
   background: var(--bg-color);
   display: flex;
