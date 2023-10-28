@@ -36,11 +36,11 @@ const Project = () => {
 
   return (
     <section id="project" className="overflow-hidden px-4 lg:px-28 py-5">
-      <div className="container mx-auto py-20 flex items-center flex-col">
-        <h2 className="font-bold text-6xl">
+      <div className="container mx-auto py-10 flex items-center flex-col">
+        <h2 className="font-bold text-5xl md:text-6xl">
           MY <span className="custom-text-gradient">PROJECTS</span>
         </h2>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
+        <div className="grid md:p-0 p-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
           {projects.map((project, index) => (
             <div
               key={index}

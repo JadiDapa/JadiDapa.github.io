@@ -14,7 +14,7 @@ const Quote = () => {
             even die because learning something isn&apos;t it? ”
           </p>
           <small className="mt-6 text-lg font-thin">
-            just some words from this dumbass
+            just some words from this dumb
           </small>
         </div>
       </div>
