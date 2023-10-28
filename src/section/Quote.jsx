@@ -1,6 +1,19 @@
+import { useEffect } from "react";
 import { BsChatQuote } from "react-icons/bs";
+import ScrollReveal from "scrollreveal";
 
 const Quote = () => {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "40px",
+      duration: 2000,
+      delay: 200,
+    });
+
+    sr.reveal(".icon", { origin: "top" });
+    sr.reveal(".quotes", { origin: "bottom" });
+    sr.reveal(".by", { origin: "bottom" });
+  }, []);
   return (
     <section
       id="skill"
@@ -8,12 +21,14 @@ const Quote = () => {
     >
       <div className="container mx-auto py-20">
         <div className="flex flex-col items-center">
-          <BsChatQuote className="text-6xl text-primary" />
-          <p className="mt-12 text-3xl max-w-3xl text-center">
+          <div className="icon">
+            <BsChatQuote className=" text-6xl text-primary" />
+          </div>
+          <p className="quotes mt-12 text-3xl max-w-3xl text-center">
             “Don&apos;t ever be afraid to learn everything that you want. U wont
             even die because learning something isn&apos;t it? ”
           </p>
-          <small className="mt-6 text-lg font-thin">
+          <small className="by mt-6 text-lg font-thin">
             just some words from this dumb
           </small>
         </div>

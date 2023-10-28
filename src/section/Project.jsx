@@ -5,6 +5,8 @@ import nike from "../assets/image/nike.png";
 import weather from "../assets/image/weather.png";
 import cart from "../assets/image/cart.png";
 import { GoLinkExternal } from "react-icons/go";
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const Project = () => {
   const projects = [
@@ -33,14 +35,24 @@ const Project = () => {
       title: "E-Commerence  |  Learning Project",
     },
   ];
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "40px",
+      duration: 2000,
+      delay: 200,
+    });
+
+    sr.reveal(".mypro", { origin: "top" });
+    sr.reveal(".projects", { origin: "bottom" });
+  }, []);
 
   return (
     <section id="project" className="overflow-hidden px-4 lg:px-28 py-5">
       <div className="container mx-auto py-10 flex items-center flex-col">
-        <h2 className="font-bold text-5xl md:text-6xl">
+        <h2 className="mypro font-bold text-5xl md:text-6xl">
           MY <span className="custom-text-gradient">PROJECTS</span>
         </h2>
-        <div className="grid md:p-0 p-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
+        <div className="projects grid md:p-0 p-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
           {projects.map((project, index) => (
             <div
               key={index}

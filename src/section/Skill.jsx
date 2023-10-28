@@ -14,6 +14,8 @@ import laravel from "../assets/image/laravel.png";
 import codeigniter from "../assets/image/codeigniter.png";
 import mysql from "../assets/image/mysql.png";
 import mongo from "../assets/image/mongo.png";
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const Skill = () => {
   const techs = {
@@ -78,21 +80,36 @@ const Skill = () => {
       },
     ],
   };
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "40px",
+      duration: 2000,
+      delay: 200,
+    });
+
+    sr.reveal(".myskill", { origin: "top" });
+    sr.reveal(".fe, .fes", {
+      origin: "left",
+    });
+    sr.reveal(".be, .bes", {
+      origin: "right",
+    });
+  }, []);
   return (
     <section
       id="skill"
       className="overflow-hidden px-4 lg:px-28 py-5 min-h-[110vh]"
     >
       <div className="container mx-auto py-20">
-        <h2 className="md:text-6xl text-5xl text-center font-bold">
+        <h2 className="myskill md:text-6xl text-5xl text-center font-bold">
           MY <span className="custom-text-gradient"> TECH & SKILL</span>
         </h2>
         <div className="mt-12">
-          <h3 className="text-center text-primary font-semibold text-3xl md:text-4xl">
+          <h3 className="fe text-center text-primary font-semibold text-3xl md:text-4xl">
             Front <span className="text-secondary">End</span>
           </h3>
           <div
-            className="flex justify-center flex-wrap gap-4
+            className="fes flex justify-center flex-wrap gap-4
            mt-3"
           >
             {techs.frontEnd.map((tech, index) => (
@@ -114,11 +131,11 @@ const Skill = () => {
         </div>
 
         <div className="mt-8">
-          <h3 className="text-center text-primary font-semibold text-3xl md:text-4xl">
+          <h3 className="be text-center text-primary font-semibold text-3xl md:text-4xl">
             Back <span className="text-secondary">End</span>
           </h3>
           <div
-            className="flex justify-center flex-wrap gap-4
+            className="bes flex justify-center flex-wrap gap-4
            mt-3"
           >
             {techs.backEnd.map((tech, index) => (
