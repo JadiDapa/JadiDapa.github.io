@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, #39dd99, #01edff);
+}
+
+.bg-gradient-hover {
+  background: linear-gradient(to bottom left, #01edff, #39dd99);
+}
+
+.btn-cv:hover {
+  background: linear-gradient(to bottom left, #01edff, #39dd99);
+  transition: 300ms all;
+}
+
+body {
+  background-color: #1f242d;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.icons-box:hover {
+  transition: all 0.3s;
+  filter: drop-shadow(0 0 3px #01edff);
+}
