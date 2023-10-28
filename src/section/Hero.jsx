@@ -16,7 +16,7 @@ const Hero = () => {
     <BsLinkedin />,
   ];
   return (
-    <section className="bg-grey overflow-hidden px-4 lg:px-28 py-5">
+    <section className="overflow-hidden px-4 lg:px-28 py-5">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="w-1/2 ">
@@ -36,7 +36,7 @@ const Hero = () => {
                 return (
                   <div
                     key={index}
-                    className="p-2 text-xl rounded-md border-2 text-primary border-primary hover:bg-primary hover:text-dark duration-300 icons-box"
+                    className="p-2 text-xl rounded-md border-2 text-primary border-primary hover:bg-primary hover:text-dark2 duration-300 icons-box"
                   >
                     {icon}
                   </div>

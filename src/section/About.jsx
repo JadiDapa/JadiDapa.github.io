@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-grey overflow-hidden px-4 lg:px-28 py-5 bg-dark2 h-screen"
+      className="overflow-hidden px-4 lg:px-28 py-5 bg-dark2 h-screen"
     >
       <div className="container mx-auto flex py-20">
         <div className="w-1/2">
