@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="flex md:order-2">
           <button
             type="button"
-            className="flex gap-2 text-white bg-gradient text-xl rounded-full px-6 py-1.5 text-center mr-3 md:mr-0   hover:-translate-y-0.5 duration-300 btn-cv"
+            className="flex gap-2 text-white bg-gradient text-xl rounded-full px-3 py-1 md:px-6 md:py-1.5 text-center mr-3 md:mr-0   hover:-translate-y-0.5 duration-300 btn-cv"
           >
             Get CV
             <span className="text-2xl">

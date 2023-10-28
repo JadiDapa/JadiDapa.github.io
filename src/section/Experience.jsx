@@ -32,7 +32,7 @@ const Experience = () => {
     <section id="experience" className="px-4 lg:px-28 py-5 bg-dark2">
       <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
         <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-          <p className="text-6xl font-bold">
+          <p className="text-5xl md:text-6xl font-bold">
             MY <span className="custom-text-gradient">EXPERIENCE</span>
           </p>
           <p className="text-sm md:text-base text-gray-50 my-4">
