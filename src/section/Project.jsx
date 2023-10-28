@@ -11,26 +11,32 @@ import ScrollReveal from "scrollreveal";
 const Project = () => {
   const projects = [
     {
+      link: "https://al-irsyad-jadidapa.vercel.app/",
       image: alirsyad,
       title: "AL - IRYSAD  |  Mosque Profile",
     },
     {
+      link: "https://afdanews.000webhostapp.com/index.php/login",
       image: afdanews,
       title: "Afda News  |  Article & News Web",
     },
     {
+      link: "https://dapa-tube.vercel.app/",
       image: ytclone,
       title: "Youtube Clone  |  API Management",
     },
     {
+      link: "https://nike-react-tailwind.vercel.app/",
       image: nike,
       title: "Nike Landing Page  |  Learning Project",
     },
     {
+      link: "https://weather-app-react-jadidapa.vercel.app/",
       image: weather,
       title: "Weather Forecast  |  Learning Project",
     },
     {
+      link: "#",
       image: cart,
       title: "E-Commerence  |  Learning Project",
     },
@@ -54,7 +60,10 @@ const Project = () => {
         </h2>
         <div className="projects grid md:p-0 p-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
           {projects.map((project, index) => (
-            <div
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               key={index}
               className="group duration-300 p-3 bg-dark2 hover:border-primary border border-transparent rounded-lg relative hover:bg-transparent"
             >
@@ -71,7 +80,7 @@ const Project = () => {
                 />
               </div>
               <p className="mt-2 text-lg">{project.title}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>
